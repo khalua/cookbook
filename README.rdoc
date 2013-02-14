@@ -1,3 +1,0 @@
-Cookbook
-========
-Rails class demo that demonstrates many to many relationships and some other shit.
