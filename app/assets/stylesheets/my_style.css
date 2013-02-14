@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Diplomata+SC); /*stock font*/
+@import url(http://fonts.googleapis.com/css?family=Mrs+Sheppards); /*movies font*/
+@import url(http://fonts.googleapis.com/css?family=Junge); /*hero*/
+
+body {
+  background: url('subtle_stripes.png') repeat;
+}
+
+
+#page-container {
+  width: 960px;
+  margin: 0 auto 0 auto;
+  padding: 0 107px 0 107px;
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
+
+header {
+  clear:both;
+  margin: 0 0 0 80px;
+  border-radius: 10px;
+}
+
+header img {
+  float: right;
+  position:relative;
+  top: -10px;
+  right: 30px;
+}
+
+nav {
+  padding: 20px 0 20px 40px;
+}
+
+nav li {
+    font-size: 25px;
+    display: inline-block;
+}
+
+section {
+  line-height: 25px;
+  background-color: white;
+  padding:  0 0 40px 30px;
+  border: 1px solid black;
+}
+
+h1 {
+  font-family: 'Mrs Sheppards', cursive;
+  font-size: 140px;
+  color: black;
+  display: inline-block;
+}
+
+h2, h3 {
+  padding: 15px 0 20px 0;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+.right {
+  float: right;
+  margin-right: 20px;
+}
+
+img {
+  margin-right: 20px;
+}
+
+label {
+  font-size: 15px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookin' Mama</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+  <nav>
+    <ul>
+     <li><span><%= link_to("Books", books_path) %></span></li>
+     <li><span><%= link_to("Recipes", recipes_path) %></span></li>
+     <li><span><%= link_to("Ingredients", ingredients_path) %></span></li>
+    </ul>
+  </nav>
+    <h1>Cookin' Mama  </h1>
+    <%= image_tag('lady.jpg', :size => '150x145') %>
+  </header>
+  <div id="page-container">
+
+
+  <section>
+    <%= yield %>
+  </section>
+  </div>
+</body>
+</html>

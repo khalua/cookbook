@@ -1,0 +1,10 @@
+<%= link_to("New Recipe", new_recipe_path, :class => "right") %>
+
+<% @recipes.each do |recipe| %>
+  <h3><%= link_to(recipe.name,recipe) %></h3>
+  <p>Course:  <%= recipe.course %></p>
+  <p>Cooking time:  <%= recipe.cooktime %> minutes</p>
+  <p>Serves:  <%= recipe.servingsize %> </p>
+  <p>Instructions: <%= recipe.instructions %></p>
+  <%= image_tag(recipe.image, :size => "520x340") %>
+<% end %>

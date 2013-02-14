@@ -1,0 +1,9 @@
+<%= link_to 'Edit', edit_recipe_path(@recipe), :class => "right" %>
+<%= link_to 'Delete', @recipe, :method => :delete, :class => "right", :confirm => "You sure?" %>
+
+<%= @recipe.name %><br>
+<%= @recipe.course %><br>
+<%= @recipe.cooktime %> minutes<br>
+<%= @recipe.servingsize %><br>
+<%= @recipe.instructions %><br>
+<%= image_tag(@recipe.image) %><br>

@@ -1,0 +1,21 @@
+<%= link_to 'Edit Book', edit_book_path(@book), :class => "right" %>
+<%= link_to 'Delete', @book, :method => :delete, :class => "right", :confirm => "You sure?" %>
+
+<h2><%= @book.title %></h2>
+<%#= @book.cuisine %>
+<%= @book.chef %><br>
+<%= image_tag(@book.image) %><br>
+<br>
+<hr>
+<% @book.recipes.each do |recipe| %>
+  <h2><%= recipe.name %></h2>
+  <%= image_tag(recipe.image) %>
+  <h3>Ingredients:</h3>
+  <% recipe.ingredients.each do |ingredient| %>
+      <%= ingredient.name %>
+      <%= image_tag(ingredient.image, :size => "100x100") %>
+  <% end %>
+  <hr>
+<% end %>
+
+

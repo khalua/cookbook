@@ -1,0 +1,8 @@
+<%= link_to("New Ingredient", new_ingredient_path, :class => "right") %>
+
+<% @ingredients.each do |ingredient| %>
+  <h3><%= link_to(ingredient.name, ingredient) %></h3>
+  <p>Measurement:  <%= ingredient.measurement %></p>
+  <p>Cost:  $<%= ingredient.cost %></p>
+  <%= image_tag(ingredient.image, :size => "520x340") %>
+<% end %>
