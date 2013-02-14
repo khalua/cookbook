@@ -6,7 +6,7 @@ b1 = Book.create(:title => 'How to Cook Everything', :cuisine => 'Mixed', :chef 
 
 r1 = Recipe.create(:name => 'Scrambled Eggs', :course => 'Breakfast', :cooktime => 15 ,:servingsize => 2 , :instructions => 'Crack Eggs, and cook', :image => 'http://img.foodnetwork.com/FOOD/2003/09/29/pa1a06_scrambled_eggs_lg.jpg')
 r2 = Recipe.create(:name => 'Roast Chicken', :course => 'Dinner', :cooktime => 90 ,:servingsize => 4 , :instructions => 'Salt and season the chicken, stick it in the over, and party', :image => 'http://www.simplyrecipes.com/wp-content/uploads/2010/03/kellers-roast-chicken.jpg?ea6e46')
-r3 = Recipe.create(:name => 'Tuna Casserole', :course => 'Dinner', :cooktime => 60 ,:servingsize => 4, :instructions => 'Chop some shit up, and stick it in the over', :image => 'http://pinchmysalt.com/wp-content/uploads/2008/09/img_0424-version-2.jpg')
+r3 = Recipe.create(:name => 'Tuna Casserole', :course => 'Dinner', :cooktime => 60 ,:servingsize => 4, :instructions => 'Chop some shit up, and stick it in the oven', :image => 'http://pinchmysalt.com/wp-content/uploads/2008/09/img_0424-version-2.jpg')
 
 i1 = Ingredient.create(:name => 'Chicken', :measurement => '1 whole', :cost => 15.95, :image => 'http://www.hospitalityinfocentre.co.uk/Poultry/Images/raw-chicken.jpg')
 i2 = Ingredient.create(:name => 'Egg', :measurement => '6', :cost => 2.49, :image => 'http://i-cdn.apartmenttherapy.com/uimages/kitchen/2008_03_26-EggFreshness.jpg')
